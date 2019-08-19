@@ -18,6 +18,7 @@ class MainLayout extends Component
                        </li>
                    </ul>
                </div>
+               <div>{this.props.children}</div>
            </div>
         )
     }
