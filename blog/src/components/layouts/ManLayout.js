@@ -16,6 +16,9 @@ class MainLayout extends Component
                        <li>
                            <Link to={"/about"}>About</Link>
                        </li>
+                       <li>
+                           <Link to={"/news/:id"}>News</Link>
+                       </li>
                    </ul>
                </div>
                <div>{this.props.children}</div>
