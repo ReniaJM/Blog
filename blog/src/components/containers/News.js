@@ -8,11 +8,11 @@ class News extends Component {
         var fakenews = [{
             id: '1',
             title: 'Mad owl chases car',
-            teaser: 'Mad owl seen tormenting drivers in Morecambe'
+            text: 'Mad owl seen tormenting drivers in Morecambe'
         }, {
             id: '2',
             title: 'Owl stowaway',
-            teaser: 'Despicable owl impersonates passenger to board flight to Luton'
+            text: 'Despicable owl impersonates passenger to board flight to Luton'
         }];
 
         this.props.dispatch(fetchNews(fakenews))
@@ -28,7 +28,7 @@ class News extends Component {
             <div>
                 <h2>News Items</h2>
                 <ul>
-                    {(this.props.news.length >0 ? <ul>{newsItems }</ul> : <div>Sorry empty news</div>)}
+                    {(this.props.news.length > 0 ? <ul>{newsItems }</ul> : <div>Sorry empty news</div>)}
                 </ul>
             </div>
         )
