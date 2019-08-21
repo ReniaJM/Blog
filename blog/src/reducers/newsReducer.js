@@ -1,7 +1,8 @@
 import constans from "../constans/actionsTypes";
 
 const initailSate= {
-    news:[]
+    news:[],
+    newsItem:{}
 };
 
 export default (state = initailSate, action) => {
@@ -10,6 +11,10 @@ export default (state = initailSate, action) => {
     switch(action.type) {
         case constans.NEWS_RECEIVED:
             updated['news']= action.news;
+            return updated;
+
+        case constans.NEWSITEM_RECEIVED:
+            updated['newsItem']= action.newsItem;
             return updated;
 
         default:

@@ -4,6 +4,7 @@ import ListItem from "../present/ListItem";
 import {fetchNews} from "../../actions/actions";
 
 class News extends Component {
+
     componentDidMount() {
         var fakenews = [{
             id: '1',
